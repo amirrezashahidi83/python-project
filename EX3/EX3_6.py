@@ -8,8 +8,6 @@ def EX3_6(numbers):
             smallest = numbers[i+1]
 
     hasit = (largest - smallest) in numbers
-    if hasit:
-        return ":)"
-    else:
-        return ":("
-    return ":/"
+    if len(numbers) == 0:
+        return ":/"
+    return hasit ? ":)" : ":("
